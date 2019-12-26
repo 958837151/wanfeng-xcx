@@ -1,0 +1,6 @@
+/* miniprogram/pages/message/message.wxss */
+
+.message{
+  padding: 30rpx;
+  box-sizing: border-box;
+}

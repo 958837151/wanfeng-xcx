@@ -1,0 +1,2 @@
+<!--components/callPhone/callPhone.wxml-->
+<text bindtap="handlecallPhone" class="iconfont icon-shouji1 shouji-bule"></text>

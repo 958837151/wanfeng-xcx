@@ -1,0 +1,6 @@
+/* components/copyText/copyText.wxss */
+
+.youhuiquan-bule{
+  color: #1296db;
+  margin-left: 20rpx;
+}

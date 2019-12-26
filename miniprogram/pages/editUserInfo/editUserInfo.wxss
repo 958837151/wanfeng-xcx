@@ -1,0 +1,29 @@
+/* miniprogram/pages/editUserInfo/editUserInfo.wxss */
+
+.updateUserInfo{
+  padding: 20rpx;
+  box-sizing: border-box;
+  height: 100%;
+}
+input{
+  border: 1px solid #937bf5;
+  margin-bottom: 10rpx;
+}
+.df,.nickName-box,.userImg-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.userImg-box button{
+  width: 300rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  padding: 0;
+  margin-right: 20rpx;
+}
+.userImg{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}

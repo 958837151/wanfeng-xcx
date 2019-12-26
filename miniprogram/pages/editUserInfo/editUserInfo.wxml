@@ -1,0 +1,40 @@
+<!--miniprogram/pages/editUserInfo/editUserInfo.wxml-->
+
+<view class="updateUserInfo">
+
+  <view class="df">
+    <text>个性签名:</text>
+    <input type="text" value="{{signnature}}" bindinput="handleText" placeholder="请输入个性签名"></input>
+  </view>
+
+  <view class="df">
+    <text>手机号:</text>
+    <input type="number" value="{{phoneNumber}}" bindinput="handleNumber" placeholder="请输入手机号"></input>
+  </view>
+
+  <view class="df">
+    <text>微信号:</text>
+    <input type="text" value="{{weixinNumber}}" bindinput="handleweixinNumber" placeholder="请输入微信号"></input>
+  </view>
+
+  <view class="df">
+    <text>开启共享位置:</text>
+    <switch checked="{{isPosition}}" bindchange="switchChange"/>
+  </view>
+
+  <view class="nickName-box">
+    <button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfoNickName" >使用微信昵称</button>
+    <input type="text" value="{{nickName}}" bindinput="handlenickName" placeholder="请输入昵称"></input>
+  </view>
+
+  <view class="userImg-box">
+    <button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfoUserImg" class="userImg-btn">使用微信头像</button>
+    <button bindtap="handleUserImgFnc">保存头像上传</button>
+    <image bindtap="handleUserImg" src="{{userImg}}" class="userImg"></image>
+  </view>
+
+  <button bindtap="handleBtn">保存设置</button>
+
+
+</view>
+

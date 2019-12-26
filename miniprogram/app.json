@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/near/near",
+    "pages/message/message",
+    "pages/user/user",
+    "pages/editUserInfo/editUserInfo",
+    "pages/friendList/friendList",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#937bf5",
+    "navigationBarTitleText": "晚风",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#1296db",
+    "selectedColor": "#d81e06",
+    "list": [
+      {
+        "iconPath": "images/tabbar/index.png",
+        "selectedIconPath": "images/tabbar/index_active.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "iconPath": "images/tabbar/near.png",
+        "selectedIconPath": "images/tabbar/near_active.png",
+        "pagePath": "pages/near/near",
+        "text": "附近"
+      },
+      {
+        "iconPath": "images/tabbar/message.png",
+        "selectedIconPath": "images/tabbar/message_active.png",
+        "pagePath": "pages/message/message",
+        "text": "消息"
+      },
+      {
+        "iconPath": "images/tabbar/user.png",
+        "selectedIconPath": "images/tabbar/user_active.png",
+        "pagePath": "pages/user/user",
+        "text": "我的"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示" 
+    }
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

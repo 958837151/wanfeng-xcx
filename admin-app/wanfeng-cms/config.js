@@ -1,0 +1,4 @@
+module.exports={
+    appid:"",
+    secret:""
+}

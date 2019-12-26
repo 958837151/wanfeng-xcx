@@ -1,0 +1,48 @@
+/* miniprogram/pages/index/index.wxss */
+
+.index-swiper{
+  margin: 20rpx;
+  margin-top: 80rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+.index-swiper image{
+  width: 100%;
+}
+.index-tab{
+  display: flex;
+  padding: 0 100rpx;
+}
+.index-tab view{
+  flex: 1;
+  text-align: center;
+  padding-bottom: 20rpx;
+}
+.index-tab .tab_active{
+  color: #937bf5;
+  border-bottom: 1rpx solid #937bf5;
+}
+.index-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20rpx;
+}
+.list-item{
+  width: 50%;
+  height: auto;
+}
+.list-item image{
+  width: 90%;
+  height: 250rpx;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+.list-text{
+  display: flex;
+  justify-content: space-between;
+  padding: 5%;
+  box-sizing: border-box;
+  color: hotpink;
+}

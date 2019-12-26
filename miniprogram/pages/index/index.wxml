@@ -1,0 +1,37 @@
+<!--miniprogram/pages/index/index.wxml-->
+<wxs src="../utils/wordSpilt.wxs" module="wordSpilt" />
+<wxs src="../utils/unitFormat.wxs" module="unitFormat" />
+
+<search  />
+<view class="index">
+
+  <swiper class="index-swiper" indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" circular="{{true}}">
+        <block wx:for="{{imagesUrl}}" wx:for-index="img_idx" wx:key="img_idx">
+          <swiper-item>
+            <image class="slide-image" src="{{item}}" width="100%" />
+          </swiper-item>
+        </block>
+  </swiper>
+
+  <view class="index-tab">
+    <view class="{{current=='recommend' ? 'tab_active' : ''}}" data-current="recommend" bindtap="handleCurrent">推荐</view>
+    <view class="{{current=='newest' ? 'tab_active' : ''}}" data-current="newest" bindtap="handleCurrent">最新</view>
+  </view>
+
+  <view class="index-list">
+
+    <view class="list-item" wx:for="{{listData}}" wx:for-index="list_idx" wx:for-item="list" wx:key="list_idx">
+      <image mode="aspectFill" src="{{list.userImg}}" data-id="{{list._id}}" bindtap="handleDetail" />
+      <view  class="list-text">
+        <text>{{wordSpilt.wordSpilt(list.nickName)}}</text>
+        <text data-id="{{list._id}}" bindtap="handleLinks">
+          <text class="iconfont icon-aixin"></text>
+          <text>{{unitFormat.unitFormat(list.links)}}</text>
+        </text>
+      </view>
+    </view>
+
+  </view>
+
+</view>

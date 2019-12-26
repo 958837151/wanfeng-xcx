@@ -1,0 +1,21 @@
+/* miniprogram/pages/detail/detail.wxss */
+
+.detail{
+  padding: 10rpx 30rpx;
+  box-sizing: border-box;
+}
+.detail-item{
+  border-bottom: 1px dashed #937bf5;
+  padding: 20rpx 0;
+}
+.detail-userImg{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 30rpx;
+}
+.isFriend{
+  text-align: center;
+  color: #937bf5;
+}

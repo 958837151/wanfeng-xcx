@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "removeMsgList":"/components/removeMsgList/removeMsgList"
+  }
+}

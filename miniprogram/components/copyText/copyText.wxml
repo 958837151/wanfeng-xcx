@@ -1,0 +1,2 @@
+<!--components/copyText/copyText.wxml-->
+<text bindtap="handlecopyText" class="iconfont icon-youhuiquan youhuiquan-bule"></text>

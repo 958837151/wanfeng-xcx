@@ -1,0 +1,44 @@
+/* components/removeMsgList/removeMsgList.wxss */
+
+.area{
+  width: calc( 100% - 40rpx );
+  height: 100rpx;
+  margin: 20rpx;
+  position: relative;
+  border: 1px dashed #937bf5;
+}
+.mov-view{
+  width: calc( 100% - 100rpx );
+  height: 100%;
+  box-sizing: border-box;
+  padding-left: 30rpx;
+  line-height: 100rpx;
+  position: absolute;
+  left: 100rpx;
+  top: 0;
+  background: #937bf5;
+  color: pink;
+  z-index: 9;
+}
+.msgImg{
+  width: 100rpx;
+  height: 100rpx;
+  overflow: hidden;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 8;
+}
+.delete{
+  width: 100rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  background: pink;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 8;
+}
